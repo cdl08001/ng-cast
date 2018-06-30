@@ -1,11 +1,10 @@
 angular.module('video-player')
+  .component('videoPlayer', {
+    bindings: {
+      video: '<'
+    },
+    controller: function($scope) {
 
-.component('videoPlayer', {
-  bindings: {
-    video: '<'
-  },
-  controller: function($scope){
-
-  },
-  templateUrl: './src/templates/videoPlayer.html'
-});
+    },
+    templateUrl: 'src/templates/videoPlayer.html'
+  });
