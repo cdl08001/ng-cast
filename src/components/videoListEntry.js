@@ -2,7 +2,8 @@ angular.module('video-player')
   .component('videoListEntry', {
     bindings: {
       video: '<',
-      index: '<'
+      index: '<',
+      onClick: '<'
     },
     controller: function($scope) {
 
