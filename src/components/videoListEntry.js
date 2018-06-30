@@ -1,4 +1,11 @@
 angular.module('video-player')
 .component('videoListEntry', {
-  // TODO
+  bindings: {
+    video: '<',
+    index: '<'
+  },
+  controller: function($scope){
+
+  },
+  templateUrl: './src/templates/videoListEntry.html'
 });
