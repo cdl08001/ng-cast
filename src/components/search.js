@@ -1,9 +1,5 @@
 angular.module('video-player')
   .component('search', {
-    bindings: {
-      newSearchQuery: '<',
-      result: '<'
-    }
     controller: function($scope) {
 
 

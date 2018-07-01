@@ -1,6 +1,6 @@
 angular.module('video-player')
 .service('youTube', function($http) {
-  this.search = function(newSearchQuery, successCallback) {
+  this.search = function(newSearchQuery) {
     return $http({
       method: 'GET',
       url: 'https://www.googleapis.com/youtube/v3/search',
@@ -12,7 +12,6 @@ angular.module('video-player')
         type: 'video',
         key: window.YOUTUBE_API_KEY
       }
-    }).then(function successCallback(response) {
     })
   }
 });

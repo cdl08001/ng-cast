@@ -1,10 +1,8 @@
 angular.module('video-player')
   .component('app', {
     controller: function ($scope, youTube) {
-      this.result = (data) => {
-        this.videos = data.items
-      }
       this.newSearchQuery = '';
+      this.videos = window.exampleVideoData;
       this.video = this.videos[0];
       this.onClick = (index) => {
         console.log('Clicked', index);
